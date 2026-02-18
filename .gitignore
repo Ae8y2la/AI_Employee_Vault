@@ -1,0 +1,35 @@
+# AI Employee Vault — Git Ignore
+# ================================
+
+# Credentials (NEVER commit)
+.env
+ai-employee/.env
+ai-employee/Agents/credentials.json
+ai-employee/Agents/token.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Obsidian
+.obsidian/
+
+# Watcher session data
+ai-employee/Agents/whatsapp_session/
+ai-employee/Agents/gmail_seen.json
+ai-employee/Agents/whatsapp_seen.json
+ai-employee/Agents/watcher_log.json
+
+# Virtual environment
+.venv/
+
+# Gemini
+.gemini/
+
+# Agent system
+.agent/
+
+# OS files
+Thumbs.db
+.DS_Store

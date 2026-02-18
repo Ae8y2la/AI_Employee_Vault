@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "email-mcp": {
+      "command": "python",
+      "args": ["Agents/mcp_email_server.py"],
+      "cwd": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\AI_Employee_Vault\\ai-employee"
+    },
+    "social-mcp": {
+      "command": "python",
+      "args": ["Agents/mcp_social_server.py"],
+      "cwd": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\AI_Employee_Vault\\ai-employee"
+    },
+    "calendar-mcp": {
+      "command": "python",
+      "args": ["Agents/mcp_calendar_server.py"],
+      "cwd": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\AI_Employee_Vault\\ai-employee"
+    },
+    "odoo-mcp": {
+      "command": "python",
+      "args": ["Agents/mcp_odoo_server.py"],
+      "cwd": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\AI_Employee_Vault\\ai-employee"
+    },
+    "browser-mcp": {
+      "command": "python",
+      "args": ["Agents/mcp_browser_server.py"],
+      "cwd": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\AI_Employee_Vault\\ai-employee"
+    }
+  }
+}

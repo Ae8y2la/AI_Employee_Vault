@@ -1,0 +1,2342 @@
+[
+  {
+    "timestamp": "2026-02-18T13:39:16.036616+00:00",
+    "action_type": "test",
+    "actor": "action_logger",
+    "target": "self",
+    "description": "Logger self-test \u2014 this entry confirms logging works.",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:39:23.308199+00:00",
+    "action_type": "email_sent",
+    "actor": "email_mcp",
+    "target": "test@example.com",
+    "description": "DRY RUN \u2014 AI Employee Test Email",
+    "approval_status": "N/A",
+    "status": "dry_run"
+  },
+  {
+    "timestamp": "2026-02-18T13:39:25.714579+00:00",
+    "action_type": "briefing_generated",
+    "actor": "briefing_generator",
+    "target": "Briefing_2026-02-18.md",
+    "description": "CEO briefing generated for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:57:34.948611+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 22836)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:57:34.958875+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 6268)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:57:34.991718+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator with Ralph Wiggum Stop Hook (PID: 14184)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:57:35.022195+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started Human-in-the-Loop approval monitor (PID: 14972)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:57:35.044177+00:00",
+    "action_type": "orchestrator_started",
+    "actor": "orchestrator",
+    "target": "all_agents",
+    "description": "Started 4 agents",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:58:05.070384+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Restart attempt 1",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:58:15.109908+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 13988)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:58:15.140177+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Restart attempt 1",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:58:25.182732+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 18380)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:58:25.214449+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart attempt 1",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:58:35.249700+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator with Ralph Wiggum Stop Hook (PID: 20916)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:58:35.279803+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart attempt 1",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:58:45.315976+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started Human-in-the-Loop approval monitor (PID: 1296)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:59:15.350007+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Restart attempt 2",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:59:25.388619+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 4704)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:59:25.417827+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Restart attempt 2",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:59:35.453260+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 2440)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:59:35.486394+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart attempt 2",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:59:45.522149+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator with Ralph Wiggum Stop Hook (PID: 18644)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:59:45.556449+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart attempt 2",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T13:59:55.594058+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started Human-in-the-Loop approval monitor (PID: 8016)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:00:25.643909+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Restart attempt 3",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:00:35.687108+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 17928)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:00:35.720635+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Restart attempt 3",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:00:45.755250+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 6716)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:00:45.783978+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart attempt 3",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:00:55.820175+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator with Ralph Wiggum Stop Hook (PID: 9300)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:00:55.862976+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart attempt 3",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:01:05.916754+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started Human-in-the-Loop approval monitor (PID: 21412)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:01:35.948713+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Max restart attempts (3) exceeded",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T14:01:35.981028+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Max restart attempts (3) exceeded",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T14:01:36.010735+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Max restart attempts (3) exceeded",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T14:01:36.040031+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Max restart attempts (3) exceeded",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T14:02:06.071224+00:00",
+    "action_type": "orchestrator_stopped",
+    "actor": "orchestrator",
+    "target": "all_agents",
+    "description": "All agents stopped",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:07:50.359966+00:00",
+    "action_type": "social_draft",
+    "actor": "social_mcp",
+    "target": "DRAFT_social_linkedin_20260218T140750.md",
+    "description": "Draft for linkedin: Test post from AI Employee \u2014 2026-02-18T19:07:50.359196+05:0",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:07:50.391466+00:00",
+    "action_type": "social_draft",
+    "actor": "social_mcp",
+    "target": "DRAFT_social_twitter_20260218T140750.md",
+    "description": "Draft for twitter: Test post from AI Employee \u2014 2026-02-18T19:07:50.389028+05:0",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:07:50.426580+00:00",
+    "action_type": "social_draft",
+    "actor": "social_mcp",
+    "target": "DRAFT_social_facebook_20260218T140750.md",
+    "description": "Draft for facebook: Test post from AI Employee \u2014 2026-02-18T19:07:50.425455+05:0",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:07:57.964285+00:00",
+    "action_type": "browser_navigate",
+    "actor": "browser_mcp",
+    "target": "https://example.com",
+    "description": "DRY RUN: h1",
+    "approval_status": "N/A",
+    "status": "dry_run"
+  },
+  {
+    "timestamp": "2026-02-18T14:08:02.758818+00:00",
+    "action_type": "briefing_generated",
+    "actor": "briefing_generator",
+    "target": "Weekly_Briefing_2026-02-18.md",
+    "description": "Weekly briefing for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:08:12.519293+00:00",
+    "action_type": "audit_generated",
+    "actor": "audit_agent",
+    "target": "Audit_2026-02-18.md",
+    "description": "Audit report for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:08:14.872028+00:00",
+    "action_type": "briefing_generated",
+    "actor": "briefing_generator",
+    "target": "Briefing_2026-02-18.md",
+    "description": "Daily briefing for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:09:28.481465+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 24000)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:09:29.529182+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 16996)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:09:30.568851+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 23428)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:09:31.612884+00:00",
+    "action_type": "orchestrator_started",
+    "actor": "orchestrator",
+    "target": "all_agents",
+    "description": "Started 3/3 agents",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:10:01.648187+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 1. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:10:11.704969+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 1960)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:10:11.739356+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 1. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:10:21.777913+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 21224)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:10:21.808018+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 1. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:10:31.843954+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 22868)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:11:01.876114+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 2. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:11:11.928120+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 20112)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:11:11.960699+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 2. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:11:21.997863+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 1432)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:11:22.029743+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 2. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:11:32.063266+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 21560)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:12:02.095310+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 3. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:12:12.162714+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 23184)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:12:12.197845+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 3. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:12:22.234275+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 15132)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:12:22.266788+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 3. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:12:32.306187+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 10940)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:13:02.330436+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 4. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:13:12.388546+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 24620)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:13:12.419328+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 4. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:13:22.453125+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 16160)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:13:22.485125+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 4. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:13:32.522402+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 5964)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:14:02.551197+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 5. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:14:12.562705+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 13836)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:14:12.598764+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 5. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:14:22.646370+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 20616)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:14:22.680436+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 5. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:14:32.716157+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 21124)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:15:02.750007+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Max retries. Last error: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.err",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T14:15:02.792818+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Max retries. Last error: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.errors,encodi",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T14:15:02.836426+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Max retries. Last error: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.errors,encodi",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T14:53:51.769933+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 26684)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:53:52.787932+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 10316)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:53:53.849979+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 14160)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:53:54.914327+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 12944)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:53:55.962267+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 26652)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:53:57.000270+00:00",
+    "action_type": "orchestrator_started",
+    "actor": "orchestrator",
+    "target": "all_agents",
+    "description": "Started 5/5 agents",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:54:03.001186+00:00",
+    "action_type": "orchestrator_stopped",
+    "actor": "orchestrator",
+    "target": "all_agents",
+    "description": "All agents stopped",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:54:27.052369+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 1. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:54:37.113472+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 24056)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:54:37.143637+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Restart 1. Reason: ^^^^^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd will simulate empty inbox.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:54:47.199777+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 20632)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:54:47.234594+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Restart 1. Reason: ^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd no messages will be scanned.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:54:57.271244+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 10956)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:54:57.300975+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 1. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:55:07.349495+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 18404)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:55:07.411047+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 1. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:55:17.470369+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 26544)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:55:47.534489+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 2. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:55:57.613158+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 26752)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:55:57.760061+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Restart 2. Reason: ^^^^^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd will simulate empty inbox.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:56:07.882122+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 26088)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:56:07.961424+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Restart 2. Reason: ^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd no messages will be scanned.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:56:18.015865+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 1308)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:56:18.219217+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 2. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:56:28.400998+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 14160)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:56:28.522633+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 2. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:56:38.581577+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 16260)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:08.615175+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 3. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:18.653682+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 3800)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:18.694043+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Restart 3. Reason: ^^^^^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd will simulate empty inbox.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:28.732107+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 27152)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:28.763892+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Restart 3. Reason: ^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd no messages will be scanned.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:38.800268+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 25152)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:38.848405+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 3. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:44.472938+00:00",
+    "action_type": "plan_created",
+    "actor": "reasoning_loop",
+    "target": "Plan_Summarize_Pipeline.md",
+    "description": "Plan created for Summarize_Pipeline.md",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:48.890135+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 3664)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:48.940858+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 3. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:57:58.988884+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 13180)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:58:29.047170+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 4. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:58:39.060263+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 20164)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:58:39.118183+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Restart 4. Reason: ^^^^^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd will simulate empty inbox.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:58:49.168109+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 22692)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:58:49.208482+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Restart 4. Reason: ^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd no messages will be scanned.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:58:59.245571+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 27148)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:58:59.281279+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 4. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:59:09.318365+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 12212)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:59:09.364782+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 4. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:59:19.412839+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 26980)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:59:49.444548+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Restart 5. Reason: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:59:59.500405+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started Local filesystem watcher (PID: 26712)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T14:59:59.550772+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Restart 5. Reason: ^^^^^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd will simulate empty inbox.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:00:09.587272+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started Gmail inbox monitor (PID: 14024)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:00:09.665522+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Restart 5. Reason: ^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd no messages will be scanned.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Pyt",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:00:19.714096+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started WhatsApp Web keyword monitor (PID: 27240)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:00:19.758945+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Restart 5. Reason: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:00:29.814227+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started Plan.md creator + Stop Hook (PID: 11420)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:00:29.926686+00:00",
+    "action_type": "agent_restart",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Restart 5. Reason: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:00:39.989537+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started HITL approval monitor (PID: 23448)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:01:10.061242+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Max retries. Last error: , line 97, in watch_loop\r\n    print(f\"\\U0001f441\\ufe0f  Inbox Watcher started \ufffd monitoring {INBOX_DIR}\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.err",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T15:01:10.096504+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Max retries. Last error: ^^^^^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd will simulate empty inbox.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.err",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T15:01:10.133267+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Max retries. Last error: ^^^^^^^^^^^^^^^^^^^^\r\n        \"   Running in DEMO mode \ufffd no messages will be scanned.\\n\"\r\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"C:\\Program Files\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.err",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T15:01:10.184569+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Max retries. Last error: g_loop\r\n    print(\"\\U0001f9e0  Reasoning Loop started \ufffd Ralph Wiggum Stop Hook active\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.errors,encodi",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T15:01:10.218651+00:00",
+    "action_type": "agent_max_retries",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Max retries. Last error: yee\\Agents\\hitl_approval.py\", line 187, in approval_loop\r\n    print(\"\\U0001f510  HITL Approval Monitor started\")\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Program Files\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.errors,encodi",
+    "approval_status": "N/A",
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-02-18T15:09:40.419523+00:00",
+    "action_type": "orchestrator_stopped",
+    "actor": "orchestrator",
+    "target": "all_agents",
+    "description": "All agents stopped",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:04.465199+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "local_agent",
+    "description": "Started (PID 12036)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:04.988790+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "sync_manager",
+    "description": "Started (PID 26256)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:05.558452+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 26380)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:06.114900+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 27188)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:06.676714+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 26096)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:07.225053+00:00",
+    "action_type": "orchestrator_started",
+    "actor": "orchestrator",
+    "target": "local",
+    "description": "Started 5 agents in local mode",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:35.566955+00:00",
+    "action_type": "task_claimed",
+    "actor": "cloud_agent",
+    "target": "Invoice_4502_Query.md",
+    "description": "Claimed by cloud_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:35.663229+00:00",
+    "action_type": "email_draft",
+    "actor": "cloud_agent",
+    "target": "DRAFT_REPLY_20260218T151635_Invoice_4502_Query.md",
+    "description": "Draft reply for Invoice_4502_Query.md (priority: high)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:35.762152+00:00",
+    "action_type": "task_released",
+    "actor": "cloud_agent",
+    "target": "Invoice_4502_Query.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:37.271913+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "local_agent",
+    "description": "Started (PID 26128)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:37.372880+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "sync_manager",
+    "description": "Started (PID 26584)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:37.423102+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 25360)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:37.495188+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 15624)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:16:37.552933+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 26528)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:07.606211+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "local_agent",
+    "description": "Started (PID 19096)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:07.663331+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "sync_manager",
+    "description": "Started (PID 3528)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:07.724271+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 27536)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:07.768600+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 15156)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:07.837615+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 25724)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:13.610730+00:00",
+    "action_type": "task_claimed",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T151635_Invoice_4502_Query.md",
+    "description": "Claimed by local_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:13.642883+00:00",
+    "action_type": "execute_send_email",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T151635_Invoice_4502_Query.md",
+    "description": "DRY RUN: Would execute send_email",
+    "approval_status": "N/A",
+    "status": "dry_run"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:13.671983+00:00",
+    "action_type": "task_released",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T151635_Invoice_4502_Query.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:37.872505+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "local_agent",
+    "description": "Started (PID 2236)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:37.940486+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "sync_manager",
+    "description": "Started (PID 20656)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:38.007663+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 912)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:38.039387+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 20164)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:17:38.073228+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 26156)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:08.178837+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "local_agent",
+    "description": "Started (PID 19824)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:08.191239+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "sync_manager",
+    "description": "Started (PID 27112)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:08.333163+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 7596)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:08.446716+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 10896)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:08.487798+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 25144)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:38.527469+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "local_agent",
+    "description": "Started (PID 17332)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:38.544827+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "sync_manager",
+    "description": "Started (PID 12120)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:38.608489+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 19776)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:38.666111+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 25288)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:18:38.707014+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 17956)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:20.125969+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 22028)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:20.655847+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started (PID 9968)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:21.184822+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 27608)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:21.713737+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "task_router",
+    "description": "Started (PID 28552)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:22.243692+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started (PID 24220)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:22.776263+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 25940)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:23.305589+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "audit_agent",
+    "description": "Started (PID 8460)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:23.395358+00:00",
+    "action_type": "audit_generated",
+    "actor": "audit_agent",
+    "target": "Audit_2026-02-18.md",
+    "description": "Audit report for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:23.830600+00:00",
+    "action_type": "orchestrator_started",
+    "actor": "orchestrator",
+    "target": "standalone",
+    "description": "Started 7 agents in standalone mode",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:53.858089+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 29044)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:53.880725+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started (PID 28832)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:53.905957+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 11488)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:53.930745+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "task_router",
+    "description": "Started (PID 4632)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:53.955881+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started (PID 27508)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:53.979116+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 13332)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:54.004527+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "audit_agent",
+    "description": "Started (PID 27544)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:25:54.096632+00:00",
+    "action_type": "audit_generated",
+    "actor": "audit_agent",
+    "target": "Audit_2026-02-18.md",
+    "description": "Audit report for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:24.033006+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 28956)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:24.063688+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started (PID 29224)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:24.089855+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 29544)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:24.115933+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "task_router",
+    "description": "Started (PID 29576)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:24.141868+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started (PID 25432)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:24.169118+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 6232)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:24.194915+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "audit_agent",
+    "description": "Started (PID 7492)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:24.283451+00:00",
+    "action_type": "audit_generated",
+    "actor": "audit_agent",
+    "target": "Audit_2026-02-18.md",
+    "description": "Audit report for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:54.221685+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 26012)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:54.254205+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started (PID 17008)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:54.279705+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 15796)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:54.304260+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "task_router",
+    "description": "Started (PID 28352)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:54.330233+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started (PID 9016)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:54.354176+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 25336)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:54.380442+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "audit_agent",
+    "description": "Started (PID 26936)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:26:54.479343+00:00",
+    "action_type": "audit_generated",
+    "actor": "audit_agent",
+    "target": "Audit_2026-02-18.md",
+    "description": "Audit report for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:24.406550+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 29596)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:24.435788+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started (PID 28768)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:24.474649+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 22028)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:24.511334+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "task_router",
+    "description": "Started (PID 26780)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:24.547820+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started (PID 28196)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:24.575494+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 14808)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:24.603635+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "audit_agent",
+    "description": "Started (PID 28836)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:24.719230+00:00",
+    "action_type": "audit_generated",
+    "actor": "audit_agent",
+    "target": "Audit_2026-02-18.md",
+    "description": "Audit report for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:54.629451+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "inbox_watcher",
+    "description": "Started (PID 27808)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:54.659615+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "gmail_watcher",
+    "description": "Started (PID 8248)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:54.686771+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "whatsapp_watcher",
+    "description": "Started (PID 29144)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:54.709867+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "task_router",
+    "description": "Started (PID 4548)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:54.736685+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "reasoning_loop",
+    "description": "Started (PID 20440)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:54.764008+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "hitl_approval",
+    "description": "Started (PID 21920)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:54.788427+00:00",
+    "action_type": "agent_started",
+    "actor": "orchestrator",
+    "target": "audit_agent",
+    "description": "Started (PID 27392)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:27:54.882761+00:00",
+    "action_type": "audit_generated",
+    "actor": "audit_agent",
+    "target": "Audit_2026-02-18.md",
+    "description": "Audit report for 2026-02-18",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:28:09.146433+00:00",
+    "action_type": "task_claimed",
+    "actor": "cloud_agent",
+    "target": "platinum_test.md",
+    "description": "Claimed by cloud_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:28:09.171861+00:00",
+    "action_type": "email_draft",
+    "actor": "cloud_agent",
+    "target": "DRAFT_REPLY_20260218T152809_platinum_test.md",
+    "description": "Draft reply for platinum_test.md (priority: normal)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:28:09.187021+00:00",
+    "action_type": "task_released",
+    "actor": "cloud_agent",
+    "target": "platinum_test.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:28:46.583128+00:00",
+    "action_type": "task_claimed",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T152809_platinum_test.md",
+    "description": "Claimed by local_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:28:46.611943+00:00",
+    "action_type": "execute_send_email",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T152809_platinum_test.md",
+    "description": "DRY RUN: Would execute send_email",
+    "approval_status": "N/A",
+    "status": "dry_run"
+  },
+  {
+    "timestamp": "2026-02-18T15:28:46.638205+00:00",
+    "action_type": "task_released",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T152809_platinum_test.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:33.878686+00:00",
+    "action_type": "task_claimed",
+    "actor": "cloud_agent",
+    "target": "platinum_test_01.md",
+    "description": "Claimed by cloud_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:33.880580+00:00",
+    "action_type": "email_draft",
+    "actor": "cloud_agent",
+    "target": "DRAFT_REPLY_20260218T153233_platinum_test_01.md",
+    "description": "Draft reply for platinum_test_01.md (priority: normal)",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:33.903282+00:00",
+    "action_type": "task_released",
+    "actor": "cloud_agent",
+    "target": "platinum_test_01.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:33.928300+00:00",
+    "action_type": "task_claimed",
+    "actor": "cloud_agent",
+    "target": "platinum_test_02.md",
+    "description": "Claimed by cloud_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:33.949871+00:00",
+    "action_type": "social_draft",
+    "actor": "cloud_agent",
+    "target": "DRAFT_SOCIAL_20260218T153233_platinum_test_02.md",
+    "description": "Social draft for platinum_test_02.md",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:33.972012+00:00",
+    "action_type": "task_released",
+    "actor": "cloud_agent",
+    "target": "platinum_test_02.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:33.992088+00:00",
+    "action_type": "task_claimed",
+    "actor": "cloud_agent",
+    "target": "platinum_test_03.md",
+    "description": "Claimed by cloud_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:34.013957+00:00",
+    "action_type": "accounting_draft",
+    "actor": "cloud_agent",
+    "target": "DRAFT_ACCOUNTING_20260218T153234_platinum_test_03.md",
+    "description": "Accounting draft for platinum_test_03.md",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:34.036455+00:00",
+    "action_type": "task_released",
+    "actor": "cloud_agent",
+    "target": "platinum_test_03.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:34.059542+00:00",
+    "action_type": "task_claimed",
+    "actor": "cloud_agent",
+    "target": "platinum_test_04.md",
+    "description": "Claimed by cloud_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:34.081404+00:00",
+    "action_type": "calendar_plan",
+    "actor": "cloud_agent",
+    "target": "Plan_calendar_20260218T153234_platinum_test_04.md",
+    "description": "Calendar plan for platinum_test_04.md",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:34.098455+00:00",
+    "action_type": "task_released",
+    "actor": "cloud_agent",
+    "target": "platinum_test_04.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:34.117658+00:00",
+    "action_type": "task_claimed",
+    "actor": "cloud_agent",
+    "target": "platinum_test_05.md",
+    "description": "Claimed by cloud_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:32:34.139636+00:00",
+    "action_type": "task_released",
+    "actor": "cloud_agent",
+    "target": "platinum_test_05.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.053696+00:00",
+    "action_type": "task_claimed",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T153233_platinum_test_01.md",
+    "description": "Claimed by local_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.076791+00:00",
+    "action_type": "execute_send_email",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T153233_platinum_test_01.md",
+    "description": "DRY RUN: Would execute send_email",
+    "approval_status": "N/A",
+    "status": "dry_run"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.098186+00:00",
+    "action_type": "task_released",
+    "actor": "local_agent",
+    "target": "DRAFT_REPLY_20260218T153233_platinum_test_01.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.120928+00:00",
+    "action_type": "task_claimed",
+    "actor": "local_agent",
+    "target": "DRAFT_SOCIAL_20260218T153233_platinum_test_02.md",
+    "description": "Claimed by local_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.132753+00:00",
+    "action_type": "execute_post_social",
+    "actor": "local_agent",
+    "target": "DRAFT_SOCIAL_20260218T153233_platinum_test_02.md",
+    "description": "DRY RUN: Would execute post_social",
+    "approval_status": "N/A",
+    "status": "dry_run"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.155823+00:00",
+    "action_type": "task_released",
+    "actor": "local_agent",
+    "target": "DRAFT_SOCIAL_20260218T153233_platinum_test_02.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.174807+00:00",
+    "action_type": "task_claimed",
+    "actor": "local_agent",
+    "target": "DRAFT_ACCOUNTING_20260218T153234_platinum_test_03.md",
+    "description": "Claimed by local_agent",
+    "approval_status": "N/A",
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.189765+00:00",
+    "action_type": "execute_accounting_review",
+    "actor": "local_agent",
+    "target": "DRAFT_ACCOUNTING_20260218T153234_platinum_test_03.md",
+    "description": "DRY RUN: Would execute accounting_review",
+    "approval_status": "N/A",
+    "status": "dry_run"
+  },
+  {
+    "timestamp": "2026-02-18T15:33:10.214552+00:00",
+    "action_type": "task_released",
+    "actor": "local_agent",
+    "target": "DRAFT_ACCOUNTING_20260218T153234_platinum_test_03.md",
+    "description": "Released to Done",
+    "approval_status": "N/A",
+    "status": "success"
+  }
+]
