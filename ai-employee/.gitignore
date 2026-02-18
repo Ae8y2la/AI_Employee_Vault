@@ -1,0 +1,8 @@
+
+# Sync Manager — security exclusions
+.env
+Agents/credentials.json
+Agents/token.json
+Agents/whatsapp_session/
+__pycache__/
+*.pyc
