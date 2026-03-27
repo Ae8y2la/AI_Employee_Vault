@@ -1,110 +1,144 @@
+# base_watcher.py - Template for all watchers
 """
 BaseWatcher — Abstract Template for All Watchers
 ==================================================
-All watchers (Gmail, WhatsApp, LinkedIn, Filesystem) inherit from this class.
-Provides common polling, logging, and .md file creation logic.
+Core Watcher Pattern (Perception Layer)
+
+All watchers (Gmail, WhatsApp, Filesystem) inherit from this class.
+The Watcher layer is your AI Employee's sensory system. These lightweight
+Python scripts run continuously, monitoring various inputs and creating
+actionable files for processing.
+
+Subclasses must implement:
+    - check_for_updates() -> list  — Return list of new items to process
+    - create_action_file(item) -> Path  — Create .md file in Needs_Action
+
+Usage:
+    class MyWatcher(BaseWatcher):
+        def check_for_updates(self): ...
+        def create_action_file(self, item): ...
+
+    watcher = MyWatcher('/path/to/vault')
+    watcher.run()
 """
 
-import abc
 import time
+import logging
 from pathlib import Path
+from abc import ABC, abstractmethod
 from datetime import datetime, timezone
-from typing import Optional
 
 try:
-    from Agents.config import NEEDS_ACTION_DIR, DRY_RUN, now_iso, now_local_iso
+    from Agents.config import VAULT_ROOT, NEEDS_ACTION_DIR, DRY_RUN, now_iso, now_local_iso
     from Agents.action_logger import log_action
 except ImportError:
-    from config import NEEDS_ACTION_DIR, DRY_RUN, now_iso, now_local_iso
+    from config import VAULT_ROOT, NEEDS_ACTION_DIR, DRY_RUN, now_iso, now_local_iso
     from action_logger import log_action
 
 
-class BaseWatcher(abc.ABC):
+class BaseWatcher(ABC):
     """
     Abstract base class for all watchers.
 
-    Subclasses must implement:
-        - name: str property
-        - poll() -> list[dict]  — returns new items found
+    Follows the Perception → Reasoning → Action architecture:
+    - Perception: check_for_updates() detects new items
+    - Handoff: create_action_file() writes .md to /Needs_Action for Claude
     """
 
-    POLL_INTERVAL: int = 30  # seconds between polls
+    def __init__(self, vault_path: str = None, check_interval: int = 60):
+        self.vault_path = Path(vault_path) if vault_path else VAULT_ROOT
+        self.needs_action = self.vault_path / 'Needs_Action'
+        self.needs_action.mkdir(parents=True, exist_ok=True)
+        self.check_interval = check_interval
+        self.logger = logging.getLogger(self.__class__.__name__)
 
-    @property
-    @abc.abstractmethod
-    def name(self) -> str:
-        """Unique name of this watcher (e.g. 'gmail_watcher')."""
-        ...
-
-    @abc.abstractmethod
-    def poll(self) -> list[dict]:
+    @abstractmethod
+    def check_for_updates(self) -> list:
         """
-        Check the data source for new items.
-        Returns a list of dicts, each with at least:
+        Return list of new items to process.
+        Each item should be a dict with at least:
             - 'title': str
-            - 'body': str
-            - 'source': str  (e.g. email address, phone number)
-            - 'priority': str  ('urgent', 'normal', 'low')
+            - 'body': str (or 'snippet')
+            - 'source': str (email address, phone number, etc.)
+            - 'priority': str ('urgent', 'normal', 'low')
         """
-        ...
+        pass
+
+    @abstractmethod
+    def create_action_file(self, item) -> Path:
+        """
+        Create .md file in Needs_Action folder for a detected item.
+        Returns the path to the created file.
+        """
+        pass
 
     def setup(self) -> None:
-        """Optional setup hook — override if needed (e.g. auth)."""
+        """Optional setup hook — override for auth, browser launch, etc."""
         pass
 
     def teardown(self) -> None:
-        """Optional cleanup hook — override if needed."""
+        """Optional cleanup hook — override for closing connections."""
         pass
 
     # ------------------------------------------------------------------
-    # Common functionality
+    # Default create_action_file for simple items
     # ------------------------------------------------------------------
 
-    def create_action_file(self, item: dict) -> Path:
+    def _default_create_action_file(self, item: dict) -> Path:
         """
-        Write a .md file to /Needs_Action for a detected item.
-        Returns the path to the created file.
+        Default implementation: write a .md file to /Needs_Action/
+        for a detected item with YAML frontmatter.
         """
         ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
         safe_title = "".join(
             c if c.isalnum() or c in " _-" else "_"
-            for c in item.get("title", "untitled")
+            for c in str(item.get("title", "untitled"))
         )[:60].strip()
-        filename = f"{ts}_{self.name}_{safe_title}.md"
-        filepath = NEEDS_ACTION_DIR / filename
+
+        watcher_name = self.__class__.__name__.lower()
+        filename = f"{ts}_{watcher_name}_{safe_title}.md"
+        filepath = self.needs_action / filename
 
         priority = item.get("priority", "normal")
-        priority_icon = {"urgent": "🔴", "normal": "🟡", "low": "🟢"}.get(
-            priority, "⚪"
-        )
+        priority_icon = {"urgent": "🔴", "normal": "🟡", "low": "🟢"}.get(priority, "⚪")
 
         content = f"""---
-source: {item.get('source', 'unknown')}
-watcher: {self.name}
+type: {item.get('type', 'task')}
+from: {item.get('source', 'Unknown')}
+subject: {item.get('title', 'No Subject')}
+received: {now_iso()}
 priority: {priority}
-detected_at: {now_iso()}
-status: needs_action
+status: pending
 ---
 
 # {priority_icon} {item.get('title', 'Untitled')}
 
 **From:** {item.get('source', 'unknown')}
-**Detected by:** {self.name}
+**Detected by:** {watcher_name}
 **Time:** {now_local_iso()}
 
 ---
 
-{item.get('body', '(no content)')}
+## Content
+
+{item.get('body', item.get('snippet', '(no content)'))}
 
 ---
 
-> *Auto-generated by {self.name}*
+## Suggested Actions
+- [ ] Review content
+- [ ] Take appropriate action
+- [ ] Archive after processing
+
+---
+
+> *Auto-generated by {watcher_name}*
 """
         filepath.write_text(content, encoding="utf-8")
 
         log_action(
             action_type="watcher_detection",
-            actor=self.name,
+            actor=watcher_name,
             target=filename,
             description=f"Detected: {item.get('title', 'untitled')} from {item.get('source', 'unknown')}",
             status="success" if not DRY_RUN else "dry_run",
@@ -112,38 +146,56 @@ status: needs_action
 
         return filepath
 
+    # ------------------------------------------------------------------
+    # Run methods
+    # ------------------------------------------------------------------
+
     def run_once(self) -> list[Path]:
         """Execute a single poll cycle and create action files."""
-        items = self.poll()
+        items = self.check_for_updates()
         created = []
         for item in items:
             path = self.create_action_file(item)
-            print(f"  📥  [{self.name}] {item.get('title', '?')} → {path.name}")
+            watcher_name = self.__class__.__name__
+            print(f"  📥  [{watcher_name}] {item.get('title', '?')} → {path.name}")
             created.append(path)
         if not items:
-            print(f"  ✅  [{self.name}] No new items.")
+            print(f"  ✅  [{self.__class__.__name__}] No new items.")
         return created
 
-    def watch_loop(self) -> None:
-        """Continuously poll until interrupted."""
-        print(f"👁️  {self.name} started — polling every {self.POLL_INTERVAL}s")
+    def run(self):
+        """
+        Continuously poll for updates — the standard entry point.
+        Runs until interrupted. Wakes up immediately when machine starts.
+        """
+        watcher_name = self.__class__.__name__
+        self.logger.info(f'Starting {watcher_name}')
+        print(f"👁️  {watcher_name} started — polling every {self.check_interval}s")
         print(f"    Dry-run: {DRY_RUN}  |  Press Ctrl+C to stop\n")
+
         self.setup()
         try:
             while True:
                 try:
-                    self.run_once()
+                    items = self.check_for_updates()
+                    for item in items:
+                        path = self.create_action_file(item)
+                        print(f"  📥  [{watcher_name}] {item.get('title', '?')} → {path.name}")
                 except Exception as e:
-                    print(f"  ⚠️  [{self.name}] Error during poll: {e}")
+                    self.logger.error(f'Error: {e}')
                     log_action(
                         action_type="watcher_error",
-                        actor=self.name,
+                        actor=watcher_name.lower(),
                         target="poll",
                         description=str(e),
                         status="failed",
                     )
-                time.sleep(self.POLL_INTERVAL)
+                    print(f"  ⚠️  [{watcher_name}] Error: {e}")
+                time.sleep(self.check_interval)
         except KeyboardInterrupt:
-            print(f"\n🛑  {self.name} stopped by user.")
+            print(f"\n🛑  {watcher_name} stopped by user.")
         finally:
             self.teardown()
+
+    # Backward-compat alias
+    watch_loop = run
